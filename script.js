@@ -300,7 +300,17 @@
 // console.log(filtered);
 
 
+// const numbers=[1,2,3,4,-3,-4,-14,5,6];
+
+// const filtered =  numbers.filter((value)=> value<=0);
+// console.log(filtered);
+
+// Mapping a Array
 const numbers=[1,2,3,4,-3,-4,-14,5,6];
 
-const filtered =  numbers.filter((value)=> value<=0);
+const filtered =  numbers.filter((value)=> value>=0);
+const items= filtered.map((value)=> '<li>'+ value + '</li>');
+const html= '<ul>' + items.join('') + '</ul>';
 console.log(filtered);
+console.log(items);
+console.log(html);
