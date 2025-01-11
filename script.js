@@ -319,10 +319,8 @@
 
 const numbers=[1,2,3,4,-3,-4,-14,5,6];
 
-const filtered =  numbers.filter((value)=> value>=0);
-const items= filtered.map((value)=> {
-    const obj={value:value};
-    return obj;
-});
+const items=numbers
+.filter((value)=> value>=0)
+.map((value)=> ({value:value}));
 
 console.log(items);
