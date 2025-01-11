@@ -321,6 +321,8 @@ const numbers=[1,2,3,4,-3,-4,-14,5,6];
 
 const items=numbers
 .filter((value)=> value>=0)
-.map((value)=> ({value:value}));
+.map((value)=> ({value:value}))
+.filter((obj)=>obj.value > 2)
+.map((obj)=>obj.value);
 
 console.log(items);
