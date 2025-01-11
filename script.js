@@ -324,9 +324,20 @@
 // .map((value)=> ({value:value}))
 // .filter((obj)=>obj.value > 2)
 // .map((obj)=>obj.value);
-
 // console.log(items);
 
-const numbers=[1,2,3,4,5,6];
-const sum = numbers.reduce((accumutor, currentValue) => accumutor + currentValue);
-console.log(sum);
+// // Reducing an array
+// const numbers=[1,2,3,4,5,6];
+// const sum = numbers.reduce((accumutor, currentValue) => accumutor + currentValue);
+// console.log(sum);
+
+// Calculating the aarayrange
+const numbers =arrayfromRange(-10,4);
+function arrayfromRange(min, max){
+const output = [];
+for( i=min; i<=max; i++ ) {
+ output.push(i);
+ }
+ return output;
+}
+console.log(numbers);
