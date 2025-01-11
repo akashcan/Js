@@ -332,12 +332,25 @@
 // console.log(sum);
 
 // Calculating the aarayrange
-const numbers =arrayfromRange(-10,4);
-function arrayfromRange(min, max){
-const output = [];
-for( i=min; i<=max; i++ ) {
- output.push(i);
- }
- return output;
+// const numbers =arrayfromRange(-10,4);
+// function arrayfromRange(min, max){
+// const output = [];
+// for( i=min; i<=max; i++ ) {
+//  output.push(i);
+//  }
+//  return output;
+// }
+// console.log(numbers);
+
+const numbers=[1,2,3,4,5];
+
+function includes(array, searchElement){
+
+for(let key of array){
+    if(key === searchElement) 
+        return true;
+    return false;
+    }
 }
-console.log(numbers);
+console.log(numbers.includes(8));
+
