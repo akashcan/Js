@@ -317,12 +317,16 @@
 
 //mapping an array with objects
 
-const numbers=[1,2,3,4,-3,-4,-14,5,6];
+// const numbers=[1,2,3,4,-3,-4,-14,5,6];
 
-const items=numbers
-.filter((value)=> value>=0)
-.map((value)=> ({value:value}))
-.filter((obj)=>obj.value > 2)
-.map((obj)=>obj.value);
+// const items=numbers
+// .filter((value)=> value>=0)
+// .map((value)=> ({value:value}))
+// .filter((obj)=>obj.value > 2)
+// .map((obj)=>obj.value);
 
-console.log(items);
+// console.log(items);
+
+const numbers=[1,2,3,4,5,6];
+const sum = numbers.reduce((accumutor, currentValue) => accumutor + currentValue);
+console.log(sum);
