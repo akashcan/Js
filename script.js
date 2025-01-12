@@ -342,15 +342,30 @@
 // }
 // console.log(numbers);
 
-const numbers=[1,2,3,4,5];
+// // finding elements 
+// const numbers=[1,2,3,4,5];
 
-function includes(array, searchElement){
+// function includes(array, searchElement){
 
-for(let key of array){
-    if(key === searchElement) 
-        return true;
-    return false;
-    }
+// for(let key of array){
+//     if(key === searchElement) 
+//       return true;
+//     return false;
+//     }
+// }
+// console.log(numbers.includes(8));
+
+// Exercise 
+const numbers=[1,2,3,4,5,6,7,8];
+
+const output = except(numbers, [1,2,3,4,]);
+
+function except(array, excluded){
+const output=[];
+for(let element of array)
+    if(!excluded.includes(element))
+    output.push(element); 
+ return output;
+
 }
-console.log(numbers.includes(8));
-
+console.log(output);
