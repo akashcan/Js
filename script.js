@@ -355,17 +355,33 @@
 // }
 // console.log(numbers.includes(8));
 
-// Exercise 
-const numbers=[1,2,3,4,5,6,7,8];
+// // Exercise 
+// const numbers=[1,2,3,4,5,6,7,8];
 
-const output = except(numbers, [1,2,3,4,]);
+// const output = except(numbers, [1,2,3,4,]);
 
-function except(array, excluded){
-const output=[];
-for(let element of array)
-    if(!excluded.includes(element))
-    output.push(element); 
- return output;
+// function except(array, excluded){
+// const output=[];
+// for(let element of array)
+//     if(!excluded.includes(element))
+//     output.push(element); 
+//  return output;
+
+// }
+// console.log(output);
+
+//counting the occurance of the element inan array
+const numbers= [1,2,3,4,5,4,4,5];
+const count= countoccurrences(numbers, 0);
+
+
+function countoccurrences(array, searchElement){
+const naya=[];
+for(let element of array){
+    if(element===searchElement)
+    naya.push(searchElement);
+}
+return naya.length;
 
 }
-console.log(output);
+console.log(count);
