@@ -429,3 +429,7 @@ console.log(renderGoal);
 const goalsEl=document.querySelector('.goals');
 goalsEl.innerHTML = goals.map(renderGoal).join("");
 
+const numbers =[1,2,3,4,5];
+const results= numbers.map((n)=>n*2);
+
+console.log(results);
