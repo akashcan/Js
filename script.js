@@ -370,18 +370,62 @@
 // }
 // console.log(output);
 
-//counting the occurance of the element inan array
-const numbers= [1,2,3,4,5,4,4,5];
-const count= countoccurrences(numbers, 0);
+// //counting the occurance of the element inan array
+// const numbers= [1,2,3,4,5,4,4,5];
+// const count= countoccurrences(numbers, 0);
 
 
-function countoccurrences(array, searchElement){
-const naya=[];
-for(let element of array){
-    if(element===searchElement)
-    naya.push(searchElement);
-}
-return naya.length;
+// function countoccurrences(array, searchElement){
+// const naya=[];
+// for(let element of array){
+//     if(element===searchElement)
+//     naya.push(searchElement);
+// }
+// return naya.length;
 
-}
-console.log(count);
+// }
+// console.log(count);
+// const movies = [ 
+//     {title:'a', year: 2018, rating: 4.5},
+//     {title:'b', year: 2018, rating: 4.7},
+//     {title:'c', year: 2018, rating: 3},
+//     {title:'d', year: 2018, rating: 4.5},
+//     {title:'e', year: 2017, rating: 4.5},
+// ];
+
+const goals=[
+    {
+        name:'Learn Html',
+        date:'2025-06-01'
+    },
+    {
+        name:'Learn CSS',
+        date:'2025-07-01'
+    },
+    {
+        name:'Learn JS',
+        date:'2025-08-01'
+    },
+    {
+        name:'Learn Node.js',
+        date:'2025-09-01'
+    },
+    {
+        name:'Learn API',
+        date:'2025-10-01'
+    }
+];
+
+const renderGoal= (goal)=>{
+    return `
+    
+    <div class="goal">
+    <p class="goal_name">🎯${goal.name}</p>
+    <span class="goal_date">📆 ${new Date(goal.date).toLocaleDateString()}</span>
+    </div>
+    `;
+};
+console.log(renderGoal);
+const goalsEl=document.querySelector('.goals');
+goalsEl.innerHTML = goals.map(renderGoal).join("");
+
