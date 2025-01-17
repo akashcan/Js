@@ -425,11 +425,43 @@ const renderGoal= (goal)=>{
     </div>
     `;
 };
-console.log(renderGoal);
 const goalsEl=document.querySelector('.goals');
 goalsEl.innerHTML = goals.map(renderGoal).join("");
 
 const numbers =[1,2,3,4,5];
 const results= numbers.map((n)=>n*2);
-
 console.log(results);
+
+
+const habits= [
+'Early to Bed', 'Early to Rise', 'Read Books', 'Maintain personal Hygeine', 'Get Focued', 'Think broadly', 'Drink Water', 'Eat Healthy Food'
+];
+const renderHabits= habits.map((habit)=> `<li>🎯${habit}</li>`).join('');
+const showMe = document.querySelector('.habits');
+showMe.innerHTML=renderHabits;
+
+const header =[
+    {greeting:'Hello',
+
+    name:'My name is Akash Pandey',
+
+   job:"I\n'm a software Developer"}
+];
+
+const buttons=[
+    'Please','OK', 'Thnak you', 'See you soon'
+];
+
+const renderHeader = header.map((header)=>`
+<h3>${header.greeting}</h3>
+<h2>${header.name}</h2>
+<p>${header.job}<p>
+`).join('');
+;
+
+const renderButtons=buttons.map((button)=>`
+<button class="btn">${button}</button>
+`).join('');
+
+const browserMa=document.querySelector('.header');
+browserMa.innerHTML=renderHeader+ renderButtons;
