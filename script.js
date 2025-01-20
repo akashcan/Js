@@ -393,75 +393,102 @@
 //     {title:'e', year: 2017, rating: 4.5},
 // ];
 
-const goals=[
-    {
-        name:'Learn Html',
-        date:'2025-06-01'
-    },
-    {
-        name:'Learn CSS',
-        date:'2025-07-01'
-    },
-    {
-        name:'Learn JS',
-        date:'2025-08-01'
-    },
-    {
-        name:'Learn Node.js',
-        date:'2025-09-01'
-    },
-    {
-        name:'Learn API',
-        date:'2025-10-01'
-    }
-];
+// const goals=[
+//     {
+//         name:'Learn Html',
+//         date:'2025-06-01'
+//     },
+//     {
+//         name:'Learn CSS',
+//         date:'2025-07-01'
+//     },
+//     {
+//         name:'Learn JS',
+//         date:'2025-08-01'
+//     },
+//     {
+//         name:'Learn Node.js',
+//         date:'2025-09-01'
+//     },
+//     {
+//         name:'Learn API',
+//         date:'2025-10-01'
+//     }
+// ];
 
-const renderGoal= (goal)=>{
-    return `
+// const renderGoal= (goal)=>{
+//     return `
     
-    <div class="goal">
-    <p class="goal_name">🎯${goal.name}</p>
-    <span class="goal_date">📆 ${new Date(goal.date).toLocaleDateString()}</span>
-    </div>
-    `;
-};
-const goalsEl=document.querySelector('.goals');
-goalsEl.innerHTML = goals.map(renderGoal).join("");
+//     <div class="goal">
+//     <p class="goal_name">🎯${goal.name}</p>
+//     <span class="goal_date">📆 ${new Date(goal.date).toLocaleDateString()}</span>
+//     </div>
+//     `;
+// };
+// const goalsEl=document.querySelector('.goals');
+// goalsEl.innerHTML = goals.map(renderGoal).join("");
 
-const numbers =[1,2,3,4,5];
-const results= numbers.map((n)=>n*2);
-console.log(results);
+// const numbers =[1,2,3,4,5];
+// const results= numbers.map((n)=>n*2);
+// console.log(results);
 
 
-const habits= [
-'Early to Bed', 'Early to Rise', 'Read Books', 'Maintain personal Hygeine', 'Get Focued', 'Think broadly', 'Drink Water', 'Eat Healthy Food'
-];
-const renderHabits= habits.map((habit)=> `<li>🎯${habit}</li>`).join('');
-const showMe = document.querySelector('.habits');
-showMe.innerHTML=renderHabits;
+// const habits= [
+// 'Early to Bed', 'Early to Rise', 'Read Books', 'Maintain personal Hygeine', 'Get Focued', 'Think broadly', 'Drink Water', 'Eat Healthy Food'
+// ];
+// const renderHabits= habits.map((habit)=> `<li>🎯${habit}</li>`).join('');
+// const showMe = document.querySelector('.habits');
+// showMe.innerHTML=renderHabits;
 
-const header =[
-    {greeting:'Hello',
+// const header =[
+//     {greeting:'Hello',
 
-    name:'My name is Akash Pandey',
+//     name:'My name is Akash Pandey',
 
-   job:"I\n'm a software Developer"}
-];
+//    job:"I\n'm a software Developer"}
+// ];
 
-const buttons=[
-    'Please','OK', 'Thnak you', 'See you soon'
-];
+// const buttons=[
+//     'Please','OK', 'Thnak you', 'See you soon'
+// ];
 
-const renderHeader = header.map((header)=>`
-<h3>${header.greeting}</h3>
-<h2>${header.name}</h2>
-<p>${header.job}<p>
-`).join('');
-;
+// const renderHeader = header.map((header)=>`
+// <h3>${header.greeting}</h3>
+// <h2>${header.name}</h2>
+// <p>${header.job}<p>
+// `).join('');
+// ;
 
-const renderButtons=buttons.map((button)=>`
-<button class="btn">${button}</button>
-`).join('');
+// const renderButtons=buttons.map((button)=>`
+// <button class="btn">${button}</button>
+// `).join('');
 
-const browserMa=document.querySelector('.header');
-browserMa.innerHTML=renderHeader+ renderButtons;
+// const browserMa=document.querySelector('.header');
+// browserMa.innerHTML=renderHeader+ renderButtons;
+
+
+// // Function Declaration
+// walk();
+// function walk(){
+//     console.log("Walk");
+// }
+// // ANonymous Function Expressison
+// let run =function(){
+//     console.log('walk');
+// }
+// run();
+// walk();
+
+// let move=run;
+// move();
+
+// let x=1;
+// x='a';
+// arguments object
+function sum(){
+    let total=0;
+    for(let value of arguments)
+        total+=value;
+    return total;
+}
+console.log(sum(1,2,3,4,5,6,7,8,9,10));
